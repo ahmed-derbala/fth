@@ -1,5 +1,5 @@
-# echocial
-Backend of Echocial. A mobile-first app for online reputation
+# FTH
+Federation Tunisienne d'halterophilie
 # features
 - javascript node.js 20 with express 5
 - everything is configurable in src/config

@@ -1,7 +1,6 @@
 const { UsersModel } = require(`./users.schema`)
 const { errorHandler } = require('../../core/utils/error')
 const { paginate } = require('../../core/helpers/pagination')
-const { ReputationsModel } = require(`../reputations/reputations.schema`)
 const mongoose = require('mongoose')
 const { log } = require('../../core/log')
 
