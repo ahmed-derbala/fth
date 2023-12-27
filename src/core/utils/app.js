@@ -20,7 +20,7 @@ let app = express()
 
 // view engine setup
 app.use(expressLayouts)
-app.set('layout', './index/views/layout')
+app.set('layout', './index/views/layout', { author: 'app' })
 app.set('views', `${process.cwd()}/src/components`)
 app.set('view engine', 'ejs')
 app.use(express.static(`${process.cwd()}/public`))
