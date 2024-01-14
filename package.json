@@ -15,7 +15,7 @@
     "format": "prettier --write \"src/**/*.js\"",
     "start": "node --max-old-space-size=32000 --trace-deprecation src/main.js",
     "start:prod": "NODE_ENV=production node --max-old-space-size=32000 src/main.js",
-    "start:prod-pm2": "npm run i:prod && NODE_ENV=production pm2 start --name fth src/main.js -i max --node-args='--max-old-space-size=32000' -f",
+    "start:prod-pm2": "npm run i && NODE_ENV=production pm2 start --name fth src/main.js -i max --node-args='--max-old-space-size=32000' -f",
     "start:prod-pm2-monit": "npm run start:prod-pm2 && pm2 monit",
     "start:default": "npm run start:local",
     "start:code": "code . && npm run start:default",
@@ -30,7 +30,7 @@
     "postpush": "git push && npm run start:default",
     "pull": "git pull origin main && npm run i && npm run start:default",
     "clean": "rm -f package-lock.json && rm -r -f node_modules && rm -r -f backups && npm cache clean -f && npm run i && npm run start:default",
-    "clean:prod": "rm -r -f node_modules && npm cache clean -f && npm run i:prod",
+    "clean:prod": "rm -r -f node_modules && npm cache clean -f && npm run i",
     "update": "rm -r -f backups/* && cp package.json backups/package.json.backup && cp package-lock.json backups/package-lock.json.backup 2>/dev/null; true && mv node_modules backups/node_modules.backup 2>/dev/null; true && npm i -D npm-check-updates -f && ncu -u && npm run clean",
     "restore": "cp backups/package.json.backup package.json && cp backups/package-lock.json.backup package-lock.json && mv backups/node_modules.backup node_modules && npm run start:default"
   },
