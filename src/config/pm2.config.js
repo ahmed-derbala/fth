@@ -1,5 +1,4 @@
 const packagejson = require('../../package.json')
-const config = require('.')
 const os = require('os')
 
 module.exports = {
