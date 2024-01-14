@@ -23,7 +23,7 @@ app.use(expressLayouts)
 app.set('layout', './index/views/layout', { author: 'app' })
 app.set('views', `${process.cwd()}/src/components`)
 app.set('view engine', 'ejs')
-app.use(express.static(`${process.cwd()}/public`))
+app.use(express.static(`public`))
 
 app.use(cors(config.app.corsOptions))
 app.use('/', rateLimit(config.app.apiLimiter))
