@@ -2,7 +2,7 @@
 uploads/
 
 # backups
-backups/
+backups/*
 
 #config files
 src/config/production.config.js
