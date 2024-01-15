@@ -29,7 +29,7 @@
     "push": "npm run format && git add . && git commit -m",
     "postpush": "git push && npm run start:default",
     "pull": "git pull origin main && npm run i && npm run start:default",
-    "pull:prod": "git pull && npm run i:prod",
+    "pull:prod": "git pull && npm run i:prod && npm run reload",
     "clean": "rm -f package-lock.json && rm -r -f node_modules && rm -r -f backups && npm cache clean -f && npm run i && npm run start:default",
     "clean:prod": "rm -r -f node_modules && npm cache clean -f && npm run i:prod",
     "update": "rm -r -f backups/* && cp package.json backups/package.json.backup && cp package-lock.json backups/package-lock.json.backup 2>/dev/null; true && mv node_modules backups/node_modules.backup 2>/dev/null; true && npm i -D npm-check-updates -f && ncu -u && npm run clean",
