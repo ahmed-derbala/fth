@@ -26,7 +26,7 @@
     "delete": "pm2 delete all",
     "monit": "pm2 monit",
     "push": "npm run format && git add . && git commit -m",
-    "postpush": "git push && npm run start:default",
+    "postpush": "git push && npm run start:local",
     "pull": "git pull origin main && npm run i && npm run start:default",
     "pull:prod": "git pull && npm run i && npm run reload",
     "clean": "rm -f package-lock.json && rm -r -f node_modules && rm -r -f backups && npm cache clean -f && npm run i && npm run start:default",
