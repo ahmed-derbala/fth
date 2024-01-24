@@ -5,5 +5,5 @@ const fs = require('fs')
  * @returns
  */
 module.exports.listTestimonialImages = () => {
-	return fs.readdirSync(`${process.cwd()}/public/img/testimonial/`)
+	return fs.readdirSync(`${process.cwd()}/public/img/testimonials/`)
 }
