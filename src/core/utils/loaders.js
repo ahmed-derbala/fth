@@ -22,5 +22,5 @@ module.exports.load = ({ app, rootDir, urlPrefix, fileSuffix }) => {
 		}
 	}
 	app.use(`/`, require(`${process.cwd()}/src${rootDir}/index/index${fileSuffix}`)) //make sure main url works with src/index
-	log({ level: 'success', message: 'routes loaded' })
+	log({ level: 'success', message: `${fileSuffix} routes loaded` })
 }
