@@ -1000,14 +1000,6 @@ contact
 --------------------------------------------- 
 */
 
-#contact-us {
-  margin-top: 140px;
-}
-
-#contact-us .container-fluid .col-lg-6 {
-  padding: 0px;
-}
-
 #contact-us .contact-form {
   background-image: url(../../images/contact-bg.jpg);
   background-position: center center;
@@ -1017,7 +1009,6 @@ contact
 
 #contact-us .contact-form #contact {
   background-color: #fff;
-  padding: 40px;
   border-radius: 5px;
 }
 
