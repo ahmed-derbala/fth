@@ -3,10 +3,9 @@ const router = express.Router()
 const config = require(`../../config`)
 const { listTestimonialImages } = require('./testimonial.service')
 const { mainData } = require('../index/index.service')
-console.log(listTestimonialImages(), 'listTestimonialImages')
 
 router.get('/', function (req, res, next) {
-	res.render('testimonial/views/testimonial', { testimonialImages: listTestimonialImages(), mainData: mainData() })
+	res.render('testimonial/views/testimonial', { testimonialImages: listTestimonialImages, mainData: mainData() })
 })
 
 module.exports = router
